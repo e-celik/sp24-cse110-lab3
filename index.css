@@ -1,4 +1,72 @@
-body
-{
-  color: blue;
+:root{
+  --main-bg-color: lightgray;/*background color*/
+}
+body {
+  background-color: var(--main-bg-color);
+}
+header {
+  color: #555555;
+  height: 35px;
+  padding: 5px;
+}
+
+h1{
+  color: rgb(0, 100, 0);
+
+  background-color: var(--main-bg-color);
+
+  margin-top: .2em;
+  margin-left: .2em;
+  margin-right: .2em;
+  margin-bottom: .2em;
+
+  padding-top: .3em;
+  padding-left: .3em;
+  padding-right: .3em;
+  padding-bottom: .3rem;
+
+  border-style: solid;
+  border-color: green;
+  border-width: .2vw;
+  border-radius: .75vw;
+
+  display: inline-block;
+
+  position: sticky;
+  top: 20px;
+}
+
+h2{
+  color: hsl(5, 20, 15);
+
+  width: 90px;
+
+  margin: .2cm .2cm .2cm .2cm;
+  padding: .3em .3em .3em .3em;
+
+  border-style: solid;
+  border-color: green;
+  border-width: .2vw;
+  border-radius: .75vw;
+  display: block;
+}
+
+ol{
+  max-width: 200px;
+  min-width: 100px;;
+  border: solid darkblue .2px;
+}
+
+h3{
+  color: color(sRGB .2 .225 .25);
+  margin: auto;
+}
+
+ul{
+  border: solid darkblue .2pt;
+  text-align: justify;
+  text-decoration: solid;
+  strong{
+    text-decoration: line-through;
+  }
 }
