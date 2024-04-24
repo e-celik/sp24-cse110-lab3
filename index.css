@@ -1,17 +1,24 @@
 :root{
   --main-bg-color: lightgray;/*background color*/
-  @media (max-width: 50rem)
-{
-  --main-bg-color: gray;/*makes your backround darker if ur screen is small because*/
 }
-}
+
+
 
 * {
   font-family: Arial, Helvetica, sans-serif;
 }
-body {
-  background-color: var(--main-bg-color);
-}
+@media (max-width: 50rem)
+    {
+      body {
+        background-color: gray;/*turns background gray if small screen because*/
+      }
+    }
+  @media (min-width: 50rem)
+  {
+    body {
+      background-color: var(--main-bg-color);
+    }
+  }
 header {
   color: #555555;
   height: 35px;
@@ -44,7 +51,7 @@ h1{
 }
 
 h1 + h2 {
-  color: hsl(5, 20, 15);
+  color: hsl(5, 10, 15);
 
   width: 90px;
 
@@ -84,9 +91,10 @@ h3{
   border: solid darkblue .2pt;
   text-align: justify;
   text-decoration: solid;
-  strong{
-    text-decoration: line-through;
-  }
+}
+
+#list strong {
+  text-decoration: line-through;
 }
 
 details:active {
