@@ -69,7 +69,10 @@ ol:has(li) {
   max-width: 200px;
   min-width: 100px;;
   border: solid darkblue .2px;
-  & li:hover {
+}
+
+li {
+  &:hover {
     border: solid darkblue .2px;
   }
 }
