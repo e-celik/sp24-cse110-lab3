@@ -24,7 +24,7 @@
     <a id="First_Task"></a>
     <h3>First Task: <span>Decide Next Meeting</span></h3>
         <p>
-          <ul>
+          <ul id="list">
             <li>Discuss what kind of weather we should meet in next</li>
             <li>Prophecize about <em>battles</em> and <em>sunsets</em></li>
             <li>"What the hell is a 'heath'?"</li>
@@ -33,12 +33,9 @@
             <li>Closing Thoughts: <b>"Fair is foul, and foul is fair; Hover through the fog and filthy air."</b></li>
           </ul>
           <p>Apparently, this is a heath:</p>
-          <div></div>
           <img src="heath.jpeg" alt="heath" width="200">
-          <div></div>
           Recording:
           <div></div>
-          <p>
           <video width="320" height="240" controls>
             <source src="IMG_1423.mp4" type="video/mp4">
           OOPSIE
@@ -46,14 +43,14 @@
           <audio controls>
             <source src="IMG_1423.mp3" type="audio/mpeg">
           </audio>
-        </p>
+        
     </section>
     <hr>
     <section>
     <a id="Second_Task"></a>
     <h3>Second Task: <span>Meet with Macbeth</span></h3>
         <p>
-          <ul>
+          <ul id="list">
             <li>Catch up; discuss witch behavior</li>
             <li>Show and Tell: pilot's thumb, shipman's card, rat with no tail</li>
             <li>Enter Macbeth, witches start dancing out of excitment. <strong>(He's kinda cute)</strong>. <br>Banquo is here too</li>
@@ -67,7 +64,7 @@
     <a id="Third_Task"></a>
     <h3>Third Task: <span>Speak with Hecate</span></h3>
         <p>
-          <ul>
+          <ul id="list">
             <li>Hecate Basically yelled at us for the entire meeting and then left after recieving a call</li>
             <li>That's all</li>
           </ul>
@@ -83,8 +80,9 @@
     </main>
 
     <form>
-      <fieldset>
+      <fieldset class="container">
         <legend>Macbeth Survey:</legend>
+        <div class="favoriteCharacter">
         <label for="fav1">Favorite Character?:</label><br>
         <input type="radio" id="fav1" name="fav" value="Macbeth">
         <label for="fav1">Macbeth</label><br>
@@ -92,19 +90,25 @@
         <label for="fav2">Witches</label><br>
         <input type="radio" id="fav3" name="fav" value="Lady Macbeth">
         <label for="fav3">Lady Macbeth</label><br>
+        </div>
 
+        <div class="favoriteCharacterWhy">
         <p><label for="why">Why?</label></p>
         <input list="reasons" id="why" name="why"><br><br>
           <datalist id="reasons">
             <option value="'Cuz they're cool">
             <option value="'Cuz they're funny">
           </datalist><br>
+        </div>
 
+        <div class="readOrEnjoyed">
         <input type="checkbox" id="read" name="read" value="read">
         <label for="read"> I have read all of Macbeth</label><br>
         <input type="checkbox" id="joy" name="joy" value="joy">
         <label for="read"> I enjoyed reading Macbeth</label><br><br>
+        </div>
 
+        <div class="controversialOpinion">
         <p><label for="w3review">What is a controvesial opinion you hold on Macbeth?</label></p>
         <textarea id="w3review" name="w3review" rows="4" cols="50"></textarea><br>
 
@@ -117,12 +121,17 @@
               <option value="Strongly">Strongly</option>
               <option value="To the Death">To the Death</option>
             </select><br>
+        </div>
 
+        <div class="info">
         <label for="email">Email:</label>
         <input type="email" id="email" name="email"><br><br>
         <label for="dob">Date of Birth:</label>
         <input type="date" id="dob" name="dob"><br><br>
+        </div>
+        <div class="submitButton">
         <button>Submit</button>
+        </div>
        </fieldset>
     </form>
 
