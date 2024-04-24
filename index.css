@@ -51,7 +51,7 @@ h1{
 }
 
 h1 + h2 {
-  color: hsl(5, 10, 15);
+  color: hsl(5, 10%, 15%);
 
   width: 90px;
 
